@@ -1,15 +1,15 @@
-import profilepic from './assets/download.jfif'
+import './student.css';
 
-function Student(){
+function Student({Name,Email,Image,}){
 
     return(
       <div className="card">
-        <img className="cardimage"src={profilepic} alt="profile picture"></img>
-        <h2 className="card-title">Francis Bien</h2>
-        <p className="card-text">francisbien12@gmail.com</p>
+        <img className="card-image" src={Image} alt=""></img>
+        <h2 className = "card-title">{Name}</h2>
+        <p className = "card-text">{Email}</p>
       </div>
     );
 
 }
 
-export default Student
+export default Student 
